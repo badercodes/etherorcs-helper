@@ -125,7 +125,10 @@ $(document).ready(function () {
         $(".character-select-wrapper").length > 0 &&
         $("#loadout").length < 1
       ) {
-        $(".character-select-wrapper").after(
+        /*
+        class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-onqdri"
+        */
+        $('button:contains("SELECT CHARACTERS")').after(
           '<div id="loadout">Use Loadout</div>'
         );
         $("#loadout").click(function () {
