@@ -2,10 +2,6 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 async function loadout() {
-  // console.log($(".character-select-wrapper").children());
-  console.log($(".select-characters-button").text());
-
-  // $(".character-select-wrapper .select-map-button").click();
   $(".select-characters-button > button ").click();
   await sleep(1500);
   $(".character-selector .character").each(function () {
@@ -58,7 +54,7 @@ async function loadout() {
 
     await sleep(1500);
 
-    if (cfgitem.ar > 1)
+    if (cfgitem.ar > 0)
       $(".inventory button")
         .eq(cfgitem.ar - 1)
         .click(); //AR
@@ -67,7 +63,7 @@ async function loadout() {
 
     await sleep(1000);
 
-    if (cfgitem.mh > 1)
+    if (cfgitem.mh > 0)
       $(".inventory button")
         .eq(cfgitem.mh - 1)
         .click(); //MH
@@ -76,7 +72,7 @@ async function loadout() {
 
     await sleep(1000);
 
-    if (cfgitem.oh > 1) {
+    if (cfgitem.oh > 0) {
       $(".inventory button")
         .eq(cfgitem.oh - 1)
         .click(); //OH
