@@ -1,7 +1,17 @@
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-async function loadout() {
+async function loadout(loadoutNum) {
+  // code to select loadout
+  if (loadoutNum === 1) {
+    cfg_loadout = loadout_one;
+  } else if (loadoutNum === 2) {
+    cfg_loadout = loadout_two;
+  } else {
+    cfg_loadout = loadout_three;
+  }
+  // end of select loadout
+
   $(".select-characters-button > button ").click();
   await sleep(1500);
   $(".character-selector .character").each(function () {
@@ -83,7 +93,7 @@ async function loadout() {
   $(".character-selector-inner").prepend(
     $(".character-selector-inner .character.selected")
   );
-}
+} //end of loadout function
 
 $(document).ready(function () {
   $(document).on("click", ".charSelFilter a", function () {
@@ -124,12 +134,30 @@ $(document).ready(function () {
         /*
         class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-onqdri"
         */
+
+        // HERE IS WHERE MY CHANGES GO!!
+        // I need to have a bunch of divs
         $('button:contains("SELECT CHARACTERS")').after(
-          '<div id="loadout">Use Loadout</div>'
+          `<div id="loadout-wrapper"> 
+            <div id="loadout" >Use Loadout</div>
+            <div id="loadoutOne" class="loadout-options">1</div>
+            <div id="loadoutTwo" class="loadout-options">2</div>
+            <div id="loadoutThree" class="loadout-options">3</div>
+          </div>`
         );
-        $("#loadout").click(function () {
-          $(this).hide();
-          loadout();
+        // this needs to be cleaned up to a parent listener
+        // and a handler depending on which child triggerd it
+        $("#loadoutOne").click(function () {
+          $("#loadout-wrapper").hide();
+          loadout(1);
+        });
+        $("#loadoutTwo").click(function () {
+          $("#loadout-wrapper").hide();
+          loadout(2);
+        });
+        $("#loadoutThree").click(function () {
+          $("#loadout-wrapper").hide();
+          loadout(3);
         });
       }
     });
@@ -142,3 +170,7 @@ s.onload = function () {
   this.remove();
 };
 (document.head || document.documentElement).appendChild(s);
+
+// testing - DELETE ME
+console.log(dummy);
+console.log(loadout_one.solo);

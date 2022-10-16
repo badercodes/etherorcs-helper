@@ -1,4 +1,4 @@
-const garbage = {
+const loadout_one = {
   solo: [
     {
       id: 0,
@@ -34,6 +34,3 @@ const garbage = {
     },
   ],
 };
-
-// delete me
-const dummy = "I'm somehow linked to content_main.js";

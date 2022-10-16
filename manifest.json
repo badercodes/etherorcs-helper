@@ -1,18 +1,25 @@
 {
   "name": "EtherOrcs Helper",
-  "description": "Made by Blumentopf",
-  "version": "1.0",
+  "description": "Made by Blumentopf - updated by Badran.eth",
+  "version": "1.11",
   "manifest_version": 3,
   "content_scripts": [
     {
       "matches": ["https://*.etherorcs.com/*"],
-      "js": ["vendor/jquery-3.6.0.min.js","settings.js","content_main.js"],
-	  "css": ["css/main.css"]
+      "js": [
+        "vendor/jquery-3.6.0.min.js",
+        "settings.js",
+        "loadouts/loadout_1.js",
+        "loadouts/loadout_2.js",
+        "loadouts/loadout_3.js",
+        "content_main.js"
+      ],
+      "css": ["css/main.css"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": [ "/images/logo48.png", "test2.png", "overwrite_settimeout.js" ],
+      "resources": ["/images/logo48.png", "overwrite_settimeout.js"],
       "matches": ["https://*.etherorcs.com/*"]
     }
   ],

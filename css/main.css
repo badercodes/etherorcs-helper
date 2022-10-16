@@ -17,7 +17,6 @@ body{
 #loadout{
 	padding: 5px;
 	background-color: rgb(33, 161, 29);
-	cursor: pointer;
 	max-width: 120px;
 	margin:auto;
 }
@@ -117,4 +116,24 @@ a.blumActive{
 .character-bar > div{
 	max-width: 1130px;
 	margin: auto;
+}
+
+/* New styles */
+
+#loadout-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.loadout-options {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  margin: auto 10px auto;
+  background-color: red;
+  min-width: 25px;
+
+}
+#loadoutOne {
+  margin-left: 20px;
 }
