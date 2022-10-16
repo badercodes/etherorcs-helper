@@ -15,9 +15,9 @@ const loadout_two = {
       oh: 5,
     },
     {
-      id: 11856,
-      ar: 11,
-      mh: 2,
+      id: 1676,
+      ar: 24,
+      mh: 17,
       oh: 9,
     },
     {

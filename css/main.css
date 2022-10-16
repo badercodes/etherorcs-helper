@@ -19,6 +19,7 @@ body{
 	background-color: rgb(33, 161, 29);
 	max-width: 120px;
 	margin:auto;
+  cursor: initial;
 }
 
 a.blumActive{

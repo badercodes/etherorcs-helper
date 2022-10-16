@@ -135,8 +135,7 @@ $(document).ready(function () {
         class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-onqdri"
         */
 
-        // HERE IS WHERE MY CHANGES GO!!
-        // I need to have a bunch of divs
+        // Injected changes to support multiple loadouts
         $('button:contains("SELECT CHARACTERS")').after(
           `<div id="loadout-wrapper"> 
             <div id="loadout" >Use Loadout</div>

@@ -17,19 +17,19 @@ const loadout_three = {
     {
       id: 11856,
       ar: 11,
-      mh: 2,
+      mh: 21,
       oh: 9,
     },
     {
       id: 13822,
       ar: 12,
-      mh: 3,
+      mh: 22,
       oh: 10,
     },
     {
       id: 6796,
       ar: 13,
-      mh: 14,
+      mh: 15,
       oh: 23,
     },
   ],
