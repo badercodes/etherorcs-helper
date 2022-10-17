@@ -8,7 +8,6 @@
       "matches": ["https://*.etherorcs.com/*"],
       "js": [
         "vendor/jquery-3.6.0.min.js",
-        "settings.js",
         "loadouts/loadout_1.js",
         "loadouts/loadout_2.js",
         "loadouts/loadout_3.js",
