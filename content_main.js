@@ -169,7 +169,3 @@ s.onload = function () {
   this.remove();
 };
 (document.head || document.documentElement).appendChild(s);
-
-// testing - DELETE ME
-console.log(dummy);
-console.log(loadout_one.solo);
