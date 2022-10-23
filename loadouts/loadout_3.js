@@ -11,26 +11,26 @@ const loadout_three = {
     {
       id: 8646,
       ar: 7,
-      mh: 20,
-      oh: 5,
+      mh: 21,
+      oh: 1,
     },
     {
       id: 11856,
       ar: 11,
-      mh: 21,
+      mh: 17,
       oh: 9,
     },
     {
       id: 13822,
       ar: 12,
-      mh: 22,
+      mh: 23,
       oh: 10,
     },
     {
       id: 6796,
       ar: 13,
       mh: 15,
-      oh: 23,
+      oh: 24,
     },
   ],
 };

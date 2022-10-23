@@ -11,7 +11,7 @@ const loadout_one = {
     {
       id: 8646,
       ar: 7,
-      mh: 20,
+      mh: 21,
       oh: 5,
     },
     {
@@ -30,7 +30,7 @@ const loadout_one = {
       id: 6796,
       ar: 13,
       mh: 14,
-      oh: 23,
+      oh: 24,
     },
   ],
 };

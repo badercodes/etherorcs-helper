@@ -114,6 +114,7 @@ $(document).ready(function () {
   );
   $("body").append(`<div id="blumMenu"><ul>
 	<li><a href="https://etherorcs.com/dapp">Terminal</a></li>
+	<li><a href="https://etherorcs.com/town/farming">Farm</a></li>
 	<li><a href="https://dungeons.etherorcs.com/?start">Dungeons</a></li>
 	<li><a href="https://etherorcs.com/town/emporium">Open Chests</a></li>
 	<li><a href="https://etherorcs.com/town/crafting">Blacksmith</a></li>
